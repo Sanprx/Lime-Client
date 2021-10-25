@@ -11,6 +11,8 @@ end)
 Section:NewSlider("JPJumpPower", "Bannable But Useful", 100, 0, function(s) -- 25 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
+local Tab = Window:NewTab("Combat")
+local Section = Tab:NewSection("PVP")
 Section:NewButton("ESP", "ESP lol", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/gwN6fn2v'),true))()
 end)
